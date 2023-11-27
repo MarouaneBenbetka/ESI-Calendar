@@ -205,4 +205,44 @@ export const classes = [
 		title: "RES",
 		src: "esi.dz_3936363533393631353137%40resource.calendar.google.com",
 	},
+	{
+		title: "S24",
+		src: "c_1888dkbt4rngoiv4jfotq9sjjmoeg%40resource.calendar.google.com",
+	},
+	{
+		title: "S25",
+		src: "c_1886ng0dk45i2gephsslh8r1ql222%40resource.calendar.google.com",
+	},
+	{
+		title: "S26",
+		src: "c_188egt976fk8qhjjkg09jbnfkrev2%40resource.calendar.google.com",
+	},
+	{
+		title: "S27",
+		src: "c_188064okqk7s0iv6hainp31uppbim%40resource.calendar.google.com",
+	},
+	{
+		title: "S28",
+		src: "c_1887ggi5ek3h4jvcnt6dj6nuntdgu%40resource.calendar.google.com",
+	},
+	{
+		title: "S29",
+		src: "c_1885mmpfjt88ah85kku8nm0c9q6jo%40resource.calendar.google.com",
+	},
+	{
+		title: "S30",
+		src: "c_188fvvmfupal0j0uh5ndmg6dooa4c%40resource.calendar.google.com",
+	},
+	{
+		title: "S31",
+		src: "c_1887hiile6b0mg3nh9c6g9o7b5iq4%40resource.calendar.google.com",
+	},
+	{
+		title: "S32",
+		src: "c_188d8giickeeagsegvcmmmtnq8qje%40resource.calendar.google.com",
+	},
+	{
+		title: "S33",
+		src: "c_1885n91j7v5qahi4ler1d12fep996%40resource.calendar.google.com",
+	},
 ];
