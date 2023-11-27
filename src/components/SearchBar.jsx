@@ -1,4 +1,4 @@
-import { classes } from "./data";
+import { classes } from "../data/data";
 import { useRef, useState } from "react";
 import { BsSearch } from "react-icons/bs";
 
@@ -10,18 +10,15 @@ const SearchBar = ({ setClass, openModal }) => {
 	};
 	return (
 		<div className="relative dropdown ">
-			<div className="w-[70vw] md:w-[40vw] relative">
+			<div className="w-[90vw] md:w-[40vw] relative">
 				<input
-					className="btn bg-white hover:bg-white hover:border-orange w-full text-dark px-4 py-3 border-2 border-orange focus:outline-none rounded-2xl"
+					className="text-sm md:text-lg btn bg-white hover:bg-white hover:border-orange w-full text-dark px-4 py-3 border-2 border-orange focus:outline-none rounded-2xl"
 					type="text"
 					placeholder="type name of the class"
 					value={inputValue}
 					onChange={(e) => setInputValue(e.target.value)}
 				/>
-				<BsSearch
-					size={28}
-					className="text-orange absolute right-3 top-3"
-				/>
+				<BsSearch className="text-orange absolute right-3 top-4 md:top-3 text-[20px] md:text-[28px]" />
 			</div>
 			<ul
 				tabIndex={0}

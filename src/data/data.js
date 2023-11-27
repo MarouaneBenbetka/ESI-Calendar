@@ -128,26 +128,6 @@ export const classes = [
 		src: "esi.dz_353438373935343730%40resource.calendar.google.com",
 	},
 	{
-		title: "DPGR1",
-		src: "esi.dz_3437323332383832393536%40resource.calendar.google.com",
-	},
-	{
-		title: "DPGR2",
-		src: "esi.dz_34373339363337393936%40resource.calendar.google.com",
-	},
-	{
-		title: "RES",
-		src: "esi.dz_3936363533393631353137%40resource.calendar.google.com",
-	},
-	{
-		title: "MC",
-		src: "esi.dz_3339363938323938363132%40resource.calendar.google.com",
-	},
-	{
-		title: "Visio",
-		src: "esi.dz_3933343835393933323333%40resource.calendar.google.com",
-	},
-	{
 		title: "S11",
 		src: "esi.dz_3534373934393235393931%40resource.calendar.google.com",
 	},
@@ -192,6 +172,28 @@ export const classes = [
 		src: "esi.dz_333034313834383638%40resource.calendar.google.com",
 	},
 	{
+		title: "Visio",
+		src: "esi.dz_3933343835393933323333%40resource.calendar.google.com",
+	},
+	{
+		title: "DPGR1",
+		src: "esi.dz_3437323332383832393536%40resource.calendar.google.com",
+	},
+	{
+		title: "DPGR2",
+		src: "esi.dz_34373339363337393936%40resource.calendar.google.com",
+	},
+
+	{
+		title: "MC1",
+		src: "esi.dz_3339363938323938363132%40resource.calendar.google.com",
+	},
+	{
+		title: "MC2",
+		src: "Y18xODhlYXVvbGZkOThnam1ubjAyZGkzMzFrOTE0dUByZXNvdXJjZS5jYWxlbmRhci5nb29nbGUuY29t",
+	},
+
+	{
 		title: "DG0",
 		src: "ZXNpLmR6XzE4OGFvN25jamRsaG1qZ3FpcWs5MHQ2b3RiZmxvNmdhNmtwamlkMWg2c28zNmU5aEByZXNvdXJjZS5jYWxlbmRhci5nb29nbGUuY29t",
 	},
@@ -200,7 +202,7 @@ export const classes = [
 		src: "Y18xODg5czNsZjc3azNvaGFiajVmdDZrY2IydWc4c0ByZXNvdXJjZS5jYWxlbmRhci5nb29nbGUuY29t",
 	},
 	{
-		title: "MC2",
-		src: "Y18xODhlYXVvbGZkOThnam1ubjAyZGkzMzFrOTE0dUByZXNvdXJjZS5jYWxlbmRhci5nb29nbGUuY29t",
+		title: "RES",
+		src: "esi.dz_3936363533393631353137%40resource.calendar.google.com",
 	},
 ];
