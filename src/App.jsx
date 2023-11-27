@@ -5,7 +5,7 @@ import { classes } from "./data/data";
 function App() {
 	const [room, setRoom] = useState(classes[0]);
 	return (
-		<section className="h-screen w-screen bg-gray-900 flex justify-center items-center flex-col overflow-y-auto pt-4">
+		<section className="h-screen w-screen bg-gray-900 flex justify-center items-center flex-col overflow-y-auto">
 			<div className="flex flex-col items-center ">
 				<SearchBar setClass={setRoom} />
 				<iframe
