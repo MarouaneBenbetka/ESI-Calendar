@@ -13,7 +13,7 @@ function App() {
 					className="hidden md:block bg-white border-0 rounded-xl overflow-hidden pt-3 mt-8 w-[90vw] h-[75vh] md:w-[800px] md:h-[500px]"
 				></iframe>
 				<iframe
-					src={`https://calendar.google.com/calendar/embed?src=${room.src}&showTz=0&showPrint=0&showTitle=1&showDate=0&showTabs=0&showCalendars=0&mode=DAY`}
+					src={`https://calendar.google.com/calendar/embed?src=${room.src}&showTz=0&showPrint=0&showTitle=1&showDate=0&showTabs=0&showCalendars=0&mode=DAY&dates=20090401/20501231`}
 					className="block md:hidden bg-white border-0 rounded-xl overflow-hidden pt-3 mt-8 w-[90vw] h-[70vh] md:w-[800px] md:h-[500px]"
 				></iframe>
 			</div>
@@ -21,6 +21,7 @@ function App() {
 				className="text-gray-400 mt-2"
 				href="https://github.com/MarouaneBenbetka/ESI-Calendar"
 				target="_blank"
+				rel="noreferrer"
 			>
 				Link to Github Repo
 			</a>
