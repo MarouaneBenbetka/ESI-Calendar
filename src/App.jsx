@@ -10,10 +10,10 @@ function App() {
 				<SearchBar setClass={setRoom} />
 				<iframe
 					src={`https://calendar.google.com/calendar/embed?src=${room.src}&showTz=0&showPrint=0&showCalendars=0&mode=WEEK`}
-					className="hidden md:block bg-white border-0 rounded-xl overflow-hidden pt-3 mt-8 w-[90vw] h-[75vh] md:w-[800px] md:h-[500px]"
+					className="hidden md:block bg-white border-0 rounded-xl overflow-hidden pt-3 mt-8 w-[90vw] h-[75vh] md:w-[800px] md:h-[540px]"
 				></iframe>
 				<iframe
-					src={`https://calendar.google.com/calendar/embed?src=${room.src}&showTz=0&showPrint=0&showTitle=1&showDate=0&showTabs=0&showCalendars=0&mode=DAY&dates=20090401/20501231`}
+					src={`https://calendar.google.com/calendar/embed?src=${room.src}&showTz=0&showPrint=0&showTitle=1&showDate=0&showTabs=1&showCalendars=0&mode=AGENDA&dates=20090401/20501231`}
 					className="block md:hidden bg-white border-0 rounded-xl overflow-hidden pt-3 mt-8 w-[90vw] h-[70vh] md:w-[800px] md:h-[500px]"
 				></iframe>
 			</div>
