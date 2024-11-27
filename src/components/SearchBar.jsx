@@ -8,6 +8,7 @@ const SearchBar = ({ setList, type }) => {
 	const blurInput = () => {
 		dropdownRef.current.blur();
 	};
+	const selectedList = (type == "class") ? classes : groups;
 
 	useEffect(() => {
 		setInputValue("");
@@ -30,26 +31,32 @@ const SearchBar = ({ setList, type }) => {
 				className="p-2 z-[10] dropdown-content menu bg-base-100 rounded-box w-full text-dark  border border-gray-400 mt-3 max-h-[200px] overflow-y-scroll"
 				ref={dropdownRef}
 			>
-				{(type == "class" ? classes : groups).map((item) => {
-					if (
-						item.title
-							.toLowerCase()
-							.includes(inputValue.toLowerCase())
-					)
-						return (
-							<li
-								key={item.title}
-								className="border text-center flex items-center justify-center rounded-lg border-gray-200"
-								onClick={() => {
-									setInputValue(item.title);
-									blurInput();
-									setList(item);
-								}}
-							>
-								<p>{item.title}</p>
-							</li>
-						);
-				})}
+				{selectedList.filter(item =>
+					item.title.toLowerCase().includes(inputValue.toLowerCase())
+				).length === 0 ? (
+						<p className="text-center inline py-2 text-lg">No results found!</p>
+				) : (
+					selectedList.map((item) => {
+						if (
+							item.title
+								.toLowerCase()
+								.includes(inputValue.toLowerCase())
+						)
+							return (
+								<li
+									key={item.title}
+									className="border rounded-lg border-gray-200"
+									onClick={() => {
+										setInputValue(item.title);
+										blurInput();
+										setList(item);
+									}}
+								>
+									<p className="text-center inline">{item.title}</p>
+								</li>
+							);
+					})
+				)}
 			</ul>
 		</div>
 	);
