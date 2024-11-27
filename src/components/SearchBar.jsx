@@ -1,20 +1,25 @@
-import { classes } from "../data/data";
-import { useRef, useState } from "react";
+import { classes, groups } from "../data/data";
+import { useEffect, useRef, useState } from "react";
 import { BsSearch } from "react-icons/bs";
 
-const SearchBar = ({ setClass, openModal }) => {
+const SearchBar = ({ setList, type }) => {
 	const [inputValue, setInputValue] = useState("");
 	const dropdownRef = useRef();
 	const blurInput = () => {
 		dropdownRef.current.blur();
 	};
+
+	useEffect(() => {
+		setInputValue("");
+	}, [type]);
+
 	return (
 		<div className="relative dropdown ">
-			<div className="w-[90vw] md:w-[40vw] relative">
+			<div className="w-[90vw] md:w-[65vw] lg:w-[40vw] relative">
 				<input
 					className="text-sm md:text-lg btn bg-white hover:bg-white hover:border-orange w-full text-dark px-4 py-3 border-2 border-orange focus:outline-none rounded-2xl"
 					type="text"
-					placeholder="type name of the class"
+					placeholder={`type name of the ${type}`}
 					value={inputValue}
 					onChange={(e) => setInputValue(e.target.value)}
 				/>
@@ -22,10 +27,10 @@ const SearchBar = ({ setClass, openModal }) => {
 			</div>
 			<ul
 				tabIndex={0}
-				className="p-2   dropdown-content menu bg-base-100 rounded-box w-full text-dark  border border-gray-400 mt-3 max-h-[200px] overflow-y-scroll"
+				className="p-2 z-[10] dropdown-content menu bg-base-100 rounded-box w-full text-dark  border border-gray-400 mt-3 max-h-[200px] overflow-y-scroll"
 				ref={dropdownRef}
 			>
-				{classes.map((item) => {
+				{(type == "class" ? classes : groups).map((item) => {
 					if (
 						item.title
 							.toLowerCase()
@@ -34,11 +39,11 @@ const SearchBar = ({ setClass, openModal }) => {
 						return (
 							<li
 								key={item.title}
-								className="border rounded-lg border-gray-200"
+								className="border text-center flex items-center justify-center rounded-lg border-gray-200"
 								onClick={() => {
 									setInputValue(item.title);
 									blurInput();
-									setClass(item);
+									setList(item);
 								}}
 							>
 								<p>{item.title}</p>
