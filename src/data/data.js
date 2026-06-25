@@ -16,6 +16,18 @@ export const classes = [
 		src: "esi.dz_36383331383830302d373830%40resource.calendar.google.com",
 	},
 	{
+		title: "A5",
+		src: "c_188cv2qt6r4e4ji2mk5srdsg29c9g%40resource.calendar.google.com"
+	},
+	{
+		title: "A6",
+		src: "c_1886m5q5bhb8shffn00o67jhlh1lk%40resource.calendar.google.com"
+	},
+	{
+		title: "A7",
+		src: "c_1884av8s56a58gpokfgqkdhlthk2q%40resource.calendar.google.com"
+	},
+	{
 		title: "AP1",
 		src: "esi.dz_3633363635383033313835%40resource.calendar.google.com",
 	},
@@ -484,9 +496,16 @@ export const groups = [
 		],
 	},
 	{
-		title: "2CS SID",
+		title: "2CS SID G01",
 		src: [
 			"Y19mb2wxNjN1dnBrcnBpM2w1ZXRqa3BucGZoZ0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t",
+			"Y19oOW91dmEzaGUxcm4yOGE3YTk4cTU4b2E4c0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t"
+		],
+	},
+	{
+		title: "2CS SID G02",
+		src: [
+			"Y19kYTBlMjg2Y2E2OGMxYWNhNDU1NjJjNGNmY2QxMzVhOTg5M2UzNTVmNDhmN2Q1ODcyMjc2MjkxYzljZmI3YTIzQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20",
 			"Y19oOW91dmEzaGUxcm4yOGE3YTk4cTU4b2E4c0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t"
 		],
 	},
